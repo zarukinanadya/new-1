@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .review {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .review h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .review p {
+            color: #666;
+        }
+
+        .review .author {
+            color: #888;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="review">
+            <h2></h2>
+            <p>Я хотел бы выразить огромную благодарность агентству недвижимости "Половинка" за их высокий профессионализм и отличный сервис.</p>
+            <p class="author">- Ирина Петровна</p>
+        </div>
+        <div class="review">
+            <h2></h2>
+            <p>Мне приятно поделиться своим опытом сотрудничества с агентством недвижимости "Половинка". Искренне благодарен всему коллективу за их профессионализм и внимательное отношение к клиентам.
+</p>
+            <p class="author">- Иван Васильев</p>
+        </div>
+        <div class="review">
+            <h2></h2>
+            <p>С первого контакта с агентством мы ощутили заботу и внимание к нашим потребностям.</p>
+            <p class="author">- Ангелина Прокопьевна</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Оставить отзыв</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Отзыв:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a class="back-button" href="index.html">На главную</a>
+    </div>
+</body>
+</html>
